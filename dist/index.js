@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  list-style: none;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.clickable:hover {\n  cursor: pointer;\n}\n\n.main-container {\n  height: 100vh;\n  width: 100%;\n}\n.main-container .scores-container {\n  width: 95%;\n  margin: 25px auto;\n}\n.main-container .scores-container .leaderborder-title {\n  font-size: 28px;\n  padding: 10px 3px;\n}\n.main-container .scores-container .leaderboard-container {\n  display: flex;\n  padding: 10px 20px;\n}\n.main-container .scores-container .leaderboard-container .recent-scores {\n  width: 50%;\n}\n.main-container .scores-container .leaderboard-container .recent-scores .title {\n  display: flex;\n  justify-content: space-between;\n  width: 100%;\n  padding: 10px 0 15px;\n}\n.main-container .scores-container .leaderboard-container .recent-scores .title .refresh-btn {\n  padding: 5px 15px;\n  box-shadow: 3px 3px 0 0 #0d1116;\n  border: 1px solid #0d1116;\n  border-radius: 4px;\n}\n.main-container .scores-container .leaderboard-container .recent-scores .scores-list {\n  border: solid #0d1116;\n  border-radius: 5px;\n}\n.main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item {\n  padding: 7px 10px;\n}\n.main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item:nth-child(even) {\n  background: #b3acac;\n}\n.main-container .scores-container .leaderboard-container .form {\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  padding-left: 30px;\n  justify-content: start;\n  align-items: center;\n}\n.main-container .scores-container .leaderboard-container .form h2 {\n  padding: 10px 0 35px;\n}\n.main-container .scores-container .leaderboard-container .form .input-name,\n.main-container .scores-container .leaderboard-container .form .input-score {\n  padding: 5px 8px;\n  width: 200px;\n  margin-bottom: 10px;\n  font-size: 16px;\n  border: 1px solid #0d1116;\n}\n.main-container .scores-container .leaderboard-container .form .submit-btn {\n  padding: 5px 15px;\n  box-shadow: 3px 3px 0 0 #0d1116;\n  border: 1px solid #0d1116;\n  border-radius: 4px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  list-style: none;\n}\n\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -472,69 +472,6 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
-/***/ }),
-/* 11 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mainLayout": () => (/* binding */ mainLayout),
-/* harmony export */   "section": () => (/* binding */ section)
-/* harmony export */ });
-const mainLayout = document.querySelector('#main-container');
-mainLayout.classList.add('main-container');
-
-const section = document.createElement('section');
-section.classList.add('scores-container');
-section.innerHTML = `<section>
-                       <h1 class="leaderborder-title">Leaderboard</h1>
-                       <div class="leaderboard-container">
-                         <div class="recent-scores">
-                           <div class="title">
-                             <h2>Recent Scores</h2>
-                             <button class="refresh-btn clickable" type="button">Refresh</button>
-                           </div>
-                           <ul class="scores-list">
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>100</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>50</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>78</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>63</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>79</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>56</span>
-                             </li>
-                             <li class="score-item">
-                               <span>Name: </span>
-                               <span>83</span>
-                             </li>
-                           </ul>
-                         </div>
-                         <form class="form">
-                           <h2>Add your scores</h2>
-                           <input type="text" class="input-name" placeholder="Your Name">
-                           <input type="text" class="input-score" placeholder="Your Score">
-                           <button class="submit-btn clickable" type="button">Submit</button>
-                         </form>
-                       </div>
-                       
-                     </section>`;
-
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -609,11 +546,7 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_layout_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
-
-
-_modules_layout_js__WEBPACK_IMPORTED_MODULE_1__.mainLayout.appendChild(_modules_layout_js__WEBPACK_IMPORTED_MODULE_1__.section);
 })();
 
 /******/ })()
