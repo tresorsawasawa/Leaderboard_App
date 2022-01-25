@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-container .scores-container {
+  width: 95%;
+  margin: 25px auto;
+}
+
+.main-container .scores-container .leaderborder-title {
+  font-size: 28px;
+  padding: 10px 3px;
+}
+
+.main-container .scores-container .leaderboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores {
+  width: 50%;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 10px 0 15px;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores .title .refresh-btn {
+  padding: 5px 15px;
+  -webkit-box-shadow: 3px 3px 0 0 #0d1116;
+          box-shadow: 3px 3px 0 0 #0d1116;
+  border: 1px solid #0d1116;
+  border-radius: 4px;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores .scores-list {
+  border: solid #0d1116;
+  border-radius: 5px;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item {
+  padding: 7px 10px;
+}
+
+.main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item:nth-child(even) {
+  background: #b3acac;
+}
+
+.main-container .scores-container .leaderboard-container .form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .scores-container .leaderboard-container .form h2 {
+  padding: 10px 0 35px;
+}
+
+.main-container .scores-container .leaderboard-container .form .input-name,
+.main-container .scores-container .leaderboard-container .form .input-score {
+  padding: 5px 8px;
+  width: 200px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #0d1116;
+}
+
+.main-container .scores-container .leaderboard-container .form .submit-btn {
+  padding: 5px 15px;
+  -webkit-box-shadow: 3px 3px 0 0 #0d1116;
+          box-shadow: 3px 3px 0 0 #0d1116;
+  border: 1px solid #0d1116;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */
