@@ -22,5 +22,17 @@ refreshBtn.addEventListener('click', async () => {
   renderScore(data);
 });
 
-// form.addEventListener('submit', async (e) => {
-// }
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const newPalyer = {
+    user: inputs[0].value,
+    score: inputs[1].value,
+  };
+  getResponse(newPalyer);
+});
+
+window.onload = async () => {
+  const result = await getScores();
+  const { result: data } = await result.json();
+  renderScore(data);
+};
