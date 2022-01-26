@@ -22,5 +22,5 @@ refreshBtn.addEventListener('click', async () => {
   renderScore(data);
 });
 
-form.addEventListener('submit', async (e) => {
-
+// form.addEventListener('submit', async (e) => {
+// }
