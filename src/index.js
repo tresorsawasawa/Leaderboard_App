@@ -12,4 +12,15 @@ const renderScore = (scores) => {
   });
 };
 
+const form = document.querySelector('#add-score-form');
+const inputs = form.querySelectorAll('input');
+const refreshBtn = document.querySelector('.refresh-btn');
+
+refreshBtn.addEventListener('click', async () => {
+  const result = await getScores();
+  const { result: data } = await result.json();
+  renderScore(data);
+});
+
+form.addEventListener('submit', async (e) => {
 
