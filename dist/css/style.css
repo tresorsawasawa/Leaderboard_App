@@ -8,10 +8,28 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #d2dde9;
+  background-color: #0d1117;
 }
 
 .clickable:hover {
   cursor: pointer;
+}
+
+.flex-center-culomn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-container {
@@ -25,15 +43,16 @@ body {
 }
 
 .main-container .scores-container .leaderborder-title {
-  font-size: 28px;
+  font-size: 40px;
   padding: 10px 3px;
+  letter-spacing: 1px;
 }
 
 .main-container .scores-container .leaderboard-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 30px;
 }
 
 .main-container .scores-container .leaderboard-container .recent-scores {
@@ -52,62 +71,88 @@ body {
 }
 
 .main-container .scores-container .leaderboard-container .recent-scores .title .refresh-btn {
-  padding: 5px 15px;
-  -webkit-box-shadow: 3px 3px 0 0 #0d1116;
-          box-shadow: 3px 3px 0 0 #0d1116;
+  padding: 7px 15px;
   border: 1px solid #0d1116;
   border-radius: 4px;
+  background-color: #0c336d;
+  color: #d2dde9;
+  font-size: 16px;
 }
 
 .main-container .scores-container .leaderboard-container .recent-scores .scores-list {
-  border: solid #0d1116;
+  border: 2px solid #343941;
   border-radius: 5px;
 }
 
 .main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item {
-  padding: 7px 10px;
+  padding: 10px;
 }
 
 .main-container .scores-container .leaderboard-container .recent-scores .scores-list .score-item:nth-child(even) {
-  background: #b3acac;
+  background-color: #2c3138;
 }
 
-.main-container .scores-container .leaderboard-container .form {
+.main-container .scores-container .leaderboard-container .right-wrap {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 30px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.main-container .scores-container .leaderboard-container .form h2 {
+.main-container .scores-container .leaderboard-container .right-wrap h2 {
   padding: 10px 0 35px;
 }
 
-.main-container .scores-container .leaderboard-container .form .input-name,
-.main-container .scores-container .leaderboard-container .form .input-score {
-  padding: 5px 8px;
-  width: 200px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  border: 1px solid #0d1116;
+.main-container .scores-container .leaderboard-container .right-wrap .form {
+  width: 270px;
 }
 
-.main-container .scores-container .leaderboard-container .form .submit-btn {
-  padding: 5px 15px;
-  -webkit-box-shadow: 3px 3px 0 0 #0d1116;
-          box-shadow: 3px 3px 0 0 #0d1116;
-  border: 1px solid #0d1116;
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score {
+  padding: 10px 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #c9d1d9;
+  background-color: #2c3138;
+  border: 1px solid #f0f6fc1a;
   border-radius: 4px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name::-webkit-input-placeholder,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score::-webkit-input-placeholder {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name:-ms-input-placeholder,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score:-ms-input-placeholder {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name::-ms-input-placeholder,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score::-ms-input-placeholder {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name::placeholder,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score::placeholder {
+  color: #c9d1d9;
+  font-size: 14px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-name:focus,
+.main-container .scores-container .leaderboard-container .right-wrap .form .input-score:focus {
+  outline: solid #c9d1d9 1px;
+}
+
+.main-container .scores-container .leaderboard-container .right-wrap .form .submit-btn {
+  padding: 7px 20px;
+  background-color: #0c336d;
+  border-radius: 4px;
+  color: #d2dde9;
+  font-size: 16px;
+  border: 1px solid #f0f6fc1a;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,9 +5,20 @@
   list-style: none;
 }
 
-body { font-family: Arial, Helvetica, sans-serif; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d2dde9;
+  background-color: #0d1117;
+}
 
 .clickable:hover { cursor: pointer; }
+
+.flex-center-culomn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 
 .main-container {
   height: 100vh;
@@ -18,13 +29,14 @@ body { font-family: Arial, Helvetica, sans-serif; }
     margin: 25px auto;
 
     & .leaderborder-title {
-      font-size: 28px;
+      font-size: 40px;
       padding: 10px 3px;
+      letter-spacing: 1px;
     }
 
     .leaderboard-container {
       display: flex;
-      padding: 10px 20px;
+      padding: 10px 20px 10px 30px;
 
       .recent-scores {
         width: 50%;
@@ -36,51 +48,65 @@ body { font-family: Arial, Helvetica, sans-serif; }
           padding: 10px 0 15px;
 
           .refresh-btn {
-            padding: 5px 15px;
-            box-shadow: 3px 3px 0 0 #0d1116;
+            padding: 7px 15px;
             border: 1px solid #0d1116;
             border-radius: 4px;
+            background-color: #0c336d;
+            color: #d2dde9;
+            font-size: 16px;
           }
         }
 
         .scores-list {
-          border: solid #0d1116;
+          border: 2px solid #343941;
           border-radius: 5px;
 
           .score-item {
-            padding: 7px 10px;
+            padding: 10px;
 
             &:nth-child(even) {
-              background: #b3acac;
+              background-color: #2c3138;
             }
           }
         }
       }
 
-      .form {
+      .right-wrap {
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 30px;
-        justify-content: start;
-        align-items: center;
 
         & h2 { padding: 10px 0 35px; }
 
-        .input-name,
-        .input-score {
-          padding: 5px 8px;
-          width: 200px;
-          margin-bottom: 10px;
-          font-size: 16px;
-          border: 1px solid #0d1116;
-        }
+        .form {
+          width: 270px;
 
-        .submit-btn {
-          padding: 5px 15px;
-          box-shadow: 3px 3px 0 0 #0d1116;
-          border: 1px solid #0d1116;
-          border-radius: 4px;
+          .input-name,
+          .input-score {
+            padding: 10px 8px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #c9d1d9;
+            background-color: #2c3138;
+            border: 1px solid #f0f6fc1a;
+            border-radius: 4px;
+
+            &::placeholder {
+              color: #c9d1d9;
+              font-size: 14px;
+            }
+
+            &:focus { outline: solid #c9d1d9 1px; }
+          }
+
+          .submit-btn {
+            padding: 7px 20px;
+            background-color: #0c336d;
+            border-radius: 4px;
+            color: #d2dde9;
+            font-size: 16px;
+            border: 1px solid #f0f6fc1a;
+            align-self: flex-end;
+          }
         }
       }
     }

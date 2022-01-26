@@ -16,43 +16,16 @@
             <h2>Recent Scores</h2>
             <button class="refresh-btn clickable" type="button">Refresh</button>
           </div>
-          <ul class="scores-list">
-            <li class="score-item">
-              <span>Name: </span>
-              <span>100</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>50</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>78</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>63</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>79</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>56</span>
-            </li>
-            <li class="score-item">
-              <span>Name: </span>
-              <span>83</span>
-            </li>
-          </ul>
+          <ul class="scores-list"></ul>
         </div>
-        <form class="form">
+        <div class="right-wrap flex-center-culomn">
           <h2>Add your scores</h2>
-          <input type="text" class="input-name" placeholder="Your Name">
-          <input type="text" class="input-score" placeholder="Your Score">
-          <button class="submit-btn clickable" type="button">Submit</button>
-        </form>
+          <form id="add-score-form" class="form flex-center-culomn">
+            <input type="text" class="input-name" placeholder="Your Name" required>
+            <input type="number" class="input-score" placeholder="Your Score" required>
+            <button class="submit-btn clickable" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </section>`
   </main>
