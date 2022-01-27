@@ -1,4 +1,4 @@
-const gameId = 'amTjIz9sEDIXo1txmD6H';
+const gameId = 'FwqTKXz3XJwzrIzmpFmt';
 const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
 export const getScores = async () => {
