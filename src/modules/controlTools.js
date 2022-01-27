@@ -6,7 +6,7 @@ export const renderScore = (scores) => {
   scores.forEach(({ user, score }) => {
     const scoreItem = document.createElement('li');
     scoreItem.classList.add('score-item');
-    scoreItem.innerHTML = `<span>${user}</span>: <span>${score}</span>`;
+    scoreItem.innerHTML = `<span class="span-player"><i class="fa fa-user fa-2x"></i>${user}</span> <span>${score}</span>`;
     scoresList.appendChild(scoreItem);
   });
 };
