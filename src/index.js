@@ -23,5 +23,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 window.onload = async () => {
+  const rotateRefIcon = document.querySelector('.fa-refresh');
+  rotateRefIcon.classList.add('fa-spin');
   refreshData();
 };
