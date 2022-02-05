@@ -54,7 +54,9 @@ body {
       display: flex;
       padding: 10px;
       border-radius: 8px;
-      box-shadow: inset -5px -5px 7px #93a0ac78, inset 3px 3px 7px rgb(238 231 231 / 28.8%);
+      box-shadow:
+        inset -5px -5px 7px #93a0ac78,
+        inset 3px 3px 7px rgb(238 231 231 / 28.8%);
 
       .recent-scores {
         width: 50%;
@@ -72,6 +74,15 @@ body {
             background-color: #0c336d;
             color: #d2dde9;
             font-size: 16px;
+
+            &:focus-visible .fa-refresh {
+              animation: rotate 1s ease-in-out;
+            }
+
+            @keyframes rotate {
+              from { transform: rotate(0deg); }
+              to { transform: rotate(360deg); }
+            }
           }
         }
 
@@ -101,10 +112,12 @@ body {
       .right-wrap {
         width: 50%;
 
-        & h2 { padding: 10px 0 35px; }
+        & h2 {
+          padding: 10px 0 35px;
+        }
 
         .form {
-          width: 270px;
+          min-width: 85%;
 
           .input-name,
           .input-score {
@@ -140,14 +153,15 @@ body {
   }
 }
 
-@media only screen and  (max-width: 720px) {
+@media only screen and (max-width: 720px) {
   .main-container {
     width: 100%;
 
     .scores-container {
       .leaderboard-container {
         width: 95%;
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
         margin: 10px auto 0;
 
         .recent-scores {
@@ -167,6 +181,7 @@ body {
       .right-wrap {
         width: 100%;
         margin: 20px auto;
+        padding-bottom: 20px;
 
         & h2 {
           font-size: 18px;
@@ -176,9 +191,11 @@ body {
         }
 
         .form {
-          width: 240px !important;
+          width: 130%;
 
-          input { margin-bottom: 10px !important; }
+          input {
+            margin-bottom: 10px !important;
+          }
         }
       }
     }
