@@ -7,9 +7,7 @@ const inputName = form.querySelector('.input-name');
 const inputScore = form.querySelector('.input-score');
 const refreshBtn = document.querySelector('.refresh-btn');
 
-refreshBtn.addEventListener('click', async () => {
-  refreshData();
-});
+refreshBtn.addEventListener('click', refreshData);
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -23,7 +21,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 window.onload = async () => {
-  const rotateRefIcon = document.querySelector('.fa-refresh');
-  rotateRefIcon.classList.add('fa-spin');
   refreshData();
+  const refreshIcon = document.querySelector('.fa-refresh');
+  refreshIcon.classList.add('fa-spin');
 };
