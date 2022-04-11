@@ -15,15 +15,16 @@
 - HTML
 - SCSS
 - JavaScript
+- Webpack
 
 ## Get Started
 
 To get a local copy up and running follow these simple example steps.
 
-1. Clone the Repo or Download the Zip file or `https://github.com/tresorsawasawa/Leaderboard_App.git`.
+1. Download the `Zip file` or clone the repo with `git clone https://github.com/tresorsawasawa/Leaderboard_App.git`.
 2. `cd /Leaderboard_App`
-3. `npm install` => This command will download all the dependancies of the project
-4. `npm start` => This will open the page in your browser
+3. `npm install`
+4. `npm start` 
 
 ## Test
 
@@ -57,7 +58,7 @@ See the live by clicking [Live Demo Link](https://tresorsawasawa.github.io/Leade
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/tresorsawasawa/Leaderboard_App/issues).
 
 ## Show your support
 
@@ -65,7 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to everyone who will get time to check this code and sugest any [issue](https://github.com/tresorsawasawa/MyPortfolio/issues) to improve the page.
+- Thanks to everyone who will get time to check this code and sugest any [issue](https://github.com/tresorsawasawa/Leaderboard_App/issues) to improve the page.
 - Thank you [Microverse](https://www.microverse.org/)
 
 ## 📝 License
