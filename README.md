@@ -44,7 +44,7 @@ And For tracking linter errors in JavaScript files run:
 
 ## Live Demo
 
-See the live by clicking [Live Demo Link](https://tresorsawasawa.github.io//dist)
+See the live by clicking [Live Demo Link](https://tresorsawasawa.github.io/Leaderboard_App/dist)
 
 ## Authors
 
