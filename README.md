@@ -19,7 +19,7 @@
 
 ## Get Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps in your terminal.
 
 1. Download the `Zip file` or clone the repo with:
 ```
