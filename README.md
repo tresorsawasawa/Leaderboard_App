@@ -2,13 +2,13 @@
 
 # Leaderboard_App
 
-## Description
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 | Mobile version                                           | Desktop Version                                           |
 | -------------------------------------------------------- | --------------------------------------------------------- |
 | ![Mobile_screenshot](./src/images/mobile_screenshot.png) | ![Desktop_screenshot](./src/images/desktop_screeshot.png) |
 
-> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
+## [Live Demo](https://tresorsawasawa.github.io/Leaderboard_App/dist)
 
 ## Built With
 
@@ -21,30 +21,52 @@
 
 To get a local copy up and running follow these simple example steps.
 
-1. Download the `Zip file` or clone the repo with `git clone https://github.com/tresorsawasawa/Leaderboard_App.git`.
-2. `cd /Leaderboard_App`
-3. `npm install`
-4. `npm start` 
+1. Download the `Zip file` or clone the repo with:
+```
+git clone https://github.com/tresorsawasawa/Leaderboard_App.git
+```
+2. Access the cloned directory:
+```
+cd Leaderboard_App
+```
 
-## Test
+### Setup
+
+> To install all project's dependencies
+```
+npm install
+```
+> To run the production mode
+```
+npm run build
+```
+> **To run the server in your browser:**
+```
+npm start
+``` 
+**Then the App will open at `http://localhost:8080/` in your browser**
+
+## Test Linters
 
 For tracking linter errors locally you need to follow these steps:
 
-For tracking linter errors in HTML files run:
+> For tracking linter errors in HTML files run:
 
-`npx hint .`
+```
+npx hint .
+```
 
-For tracking linter errors in CSS or SASS files run:
+> For tracking linter errors in CSS or SASS files run:
 
-`npx stylelint "**/*.{css,scss}"`
+```
+npx stylelint "**/*.{css,scss}"
+```
 
-And For tracking linter errors in JavaScript files run:
+> And For tracking linter errors in JavaScript files run:
 
-`npx eslint .`
-
-## Live Demo
-
-See the live by clicking [Live Demo Link](https://tresorsawasawa.github.io/Leaderboard_App/dist)
+```
+npx eslint .
+```
 
 ## Authors
 
@@ -52,7 +74,7 @@ See the live by clicking [Live Demo Link](https://tresorsawasawa.github.io/Leade
 
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 - Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
-- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tr%C3%A9sor-sawasawa-43745320b/)
+- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tresor-sawasawa/)
 
 ## 🤝 Contributing
 
